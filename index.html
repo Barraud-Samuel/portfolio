@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>Samuel Barraud</title>
+	<meta name="description" content="Portfolio de Samuel Barraud">
+	<link rel="stylesheet" href="styles/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	<script src="deploy/parallax.js"></script>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/mgGlitch.min.js"></script>
+
+
+</head>
+<body>
+	<header>
+		<div id='stars'></div>
+		<div id='stars2'></div>
+		<div id='stars3'></div>
+
+		<div id="scene" class="scene">
+			<div data-depth="0.20" class="DownHalfsquare layer"></div>
+			<div data-depth="0.20" class="UpHalfsquare layer "></div>
+			<div data-depth="0.30" class="imgHeader layer"><!-- <img src="" alt="meteor"> --></div>
+			<div data-depth="0.60" class="title layer"><h1 class="" data-text="Samuel Barraud">Samuel Barraud</h1></div>
+		</div>
+	</header>
+	<main>
+		<div class="description">
+			<div class="illustration">
+				<img src="img-layout/comet.svg">
+			</div>
+			<p>Bonjour, j'ai 20 ans. Je suis étudiant en première année @HETIC, j'apprends le développement web ainsi que le web design. 
+			Je suis actuellement à la recherche d'une alternance de d'un ans minimum (début octobre)</p>
+		</div>
+		<div class="skills">
+			<h2>Compétences</h2>
+			<div class="skillsLogo">
+				<div><img src="img-layout/photoshop.png"></div>
+				<div><img src="img-layout/illustrator.png"></div>
+				<div><img src="img-layout/premiere.png"></div>
+				<div><img src="img-layout/javascript.png"></div>
+				<div><img src="img-layout/html.png"></div>
+				<div><img src="img-layout/css.png"></div>
+			</div>
+			<img class="skillsIllu" src="img-layout/astronautW.png">
+		</div>
+		<div class="projects">
+		<h2>Mes projets</h2>
+			<div class="project urbex">
+				<a href="">
+					<img src="img-content/urbex.png">
+				</a>
+			</div>
+			<div class="hover_project">
+				
+			</div>
+			<div class="project audioT">
+				<a href="">
+					<img src="img-content/urbex.png">
+				</a>
+			</div>
+			<div class="hover_project">
+				
+			</div>
+			<div class="project BBM">
+				<a href="">
+					<img src="img-content/urbex.png">
+				</a>
+			</div>
+			<div class="hover_project">
+				
+			</div>
+			<div class="project comming">
+				<a href="">
+					<img src="img-content/urbex.png">
+				</a>
+			</div>
+			<div class="hover_project">
+				
+			</div>
+		</div>
+		<div class="contact">
+			<video autoplay loop>
+				<source src="video/bg-video2.mp4" type="video/mp4">
+			</video>
+			<div class="black-filter pattern"></div>
+			<div class="about-me">
+				<p>samuel.barraud1@gmail.com</p>
+				<a href="https://www.linkedin.com/in/samuel-barraud-0562a8139/" target="_blank"><p>Mon Linkedin</p></a>
+			</div>
+		</div>
+	</main>
+</body>
+
+<script type="text/javascript">
+var scene = document.getElementById('scene');
+
+var parallax = new Parallax(scene,{
+	scalarX: 30,
+  scalarY: 30,
+});
+//alert("site en création");
+$( function() {
+		$( "." ).mgGlitch({
+          // set 'true' to stop the plugin
+				  destroy : false, 
+          // set 'false' to stop glitching
+          glitch: true, 
+          // set 'false' to stop scaling
+          scale: true, 
+          // set 'false' to stop glitch blending
+          blend : true, 
+          // select blend mode type
+          blendModeType : 'hue',
+          // set min time for glitch 1 elem
+          glitch1TimeMin : 200, 
+          // set max time for glitch 1 elem
+          glitch1TimeMax : 400,
+          // set min time for glitch 2 elem
+          glitch2TimeMin : 10, 
+          // set max time for glitch 2 elem
+          glitch2TimeMax : 100, 
+		});
+});
+
+
+$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+    console.log(scroll);
+    if (scroll >=887){
+    	$(".skillsIllu").addClass("deplacement");
+    } else if (scroll <= 790) {
+    	$(".skillsIllu").removeClass("deplacement");
+    }
+});
+
+
+/*$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+    console.log(scroll);
+    if (scroll >=1300){
+      $(".move").addClass("deplacement");
+      $(".move:nth-child(2)").addClass("delay1");
+      $(".move:nth-child(3)").addClass("delay2");
+    }
+});*/
+</script>
+
+</html>
