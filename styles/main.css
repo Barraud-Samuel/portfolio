@@ -169,12 +169,41 @@ header .scene{
   width: 100%;
   transform: rotate(30deg);
 }
+
+.hover_project{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background: rgba(75,54,124,0.8);
+  transition: 1s ;
+  -webkit-transition: 1s ease;
+  -moz-transition: 1s ease;
+  -o-transition: 1s ease;
+  display: flex;
+}
+.hover_project .Discrover_Project{
+  margin: auto;
+  max-width: 300px;
+  height: 80px;
+  background: #fff;
+}
+.Dicover_Project a{
+  color: #000;
+}
+
+.hover_project:hover{
+  opacity: 1;
+}
 .projects{
   height: auto;
   background: #e1e1e1;
 }
 .project{
   height: 400px;
+  position: relative;
 }
 .projects h2{
   text-align: center;
