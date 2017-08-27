@@ -131,8 +131,18 @@ header .scene{
   width: 100%;
   z-index: 9999999;
 }
+.scroll{
+  position: absolute;
+  width: 30px;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.scroll img{
+  width: 100%;
+}
 .title h1{
-  font-size: 60px;
+  font-size: 70px;
   text-transform: uppercase;
   margin: 250px 0 0 0;
   transform: translateY(-50%);
@@ -159,6 +169,7 @@ header .scene{
   margin: 0 auto;
   padding-top: 60px;
   font-size: 22px;
+  font-family: 'Playfair Display', serif;
 }
 .illustration{
   width: 130px;
@@ -177,23 +188,30 @@ header .scene{
   width: 100%;
   height: 100%;
   opacity: 0;
-  background: rgba(75,54,124,0.8);
+  background: rgba(75,54,124,0.85);
   transition: 1s ;
   -webkit-transition: 1s ease;
   -moz-transition: 1s ease;
   -o-transition: 1s ease;
   display: flex;
 }
-.hover_project .Discrover_Project{
+.hover_project .discover_Project{
   margin: auto;
   max-width: 300px;
+  width: 100%;
   height: 80px;
   background: #fff;
 }
-.Dicover_Project a{
-  color: #000;
+.discover_Project a{
+  display: flex;
+  height: 100%;
 }
-
+.discover_Project span{
+  color: #000;
+  margin: auto;
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+}
 .hover_project:hover{
   opacity: 1;
 }
@@ -204,29 +222,22 @@ header .scene{
 .project{
   height: 400px;
   position: relative;
+  background: #e1e1e1;
+}
+.project:nth-child(odd){
+  background: #fff;
 }
 .projects h2{
   text-align: center;
   font-size: 30px;
   padding:50px 0 50px 0;
   text-transform: uppercase;
+  font-family: 'Playfair Display', serif;
 }
 .project img{
   height: 100%;
   margin: 0 auto;
   display: block;
-}
-.urbex{
-  background: #e1e1e1;
-}
-.audioT{
-  background: #bcbcbc;
-}
-.BBM{
-  background: #9b9b9b;
-}
-.comming{
-  background: #828282;
 }
 .skills{
   height: 500px;
@@ -249,6 +260,7 @@ header .scene{
   font-size: 30px;
   margin:50px 0 0 0;
   text-transform: uppercase;
+  font-family: 'Playfair Display', serif;
 }
 .skills .skillsLogo{
     display: flex;
@@ -279,38 +291,24 @@ header .scene{
 }
 .contact{
   width: 100%;
-  height: 500px;
-  position: relative;
-  background-color: transparent;
-  overflow: hidden;
+  height: 200px;
+  background: #fff;
+  display: flex;
 }
-video{
-    margin-left: 50%;
-    transform: translateX(-50%);
-}
-.black-filter{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0, 0);
-  top: 0;
-  left: 0;
-}
-
-.pattern {
-    background-image:url(../img-layout/pattern.png);
-    background-repeat: repeat;
-    background-attachment:scroll;
+.contact h2{
+  text-align: center;
+  font-size: 30px;
+  margin: 0 0 10px 0;
 }
 .about-me{
-  position: absolute;
-  width: 100%;
-  height: 100%;
   text-align: center;
-  top: 0;
-  left: 0;
+  font-family: 'Playfair Display', serif;
+  margin: auto;
+  font-size: 18px;
 }
-
+.about-me p{
+  margin: 0 0 5px 0;
+}
 /* ETOILE */
 html {
   height: 100%;
