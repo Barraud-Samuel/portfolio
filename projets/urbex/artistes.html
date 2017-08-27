@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>artistes</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="styles/csslisteartistes.css">
+	<link rel="stylesheet" type="text/css" href="styles/cssartiste.css">
+	<meta charset="UTF-8">
+</head>
+<body>
+<header class="page_list_artistes clearfix">
+		
+		<h1>ARTISTES</h1>
+		<nav>
+			<ul>
+				<li><a href="index.html">accueil</a></li>
+				<li><a href="#">artistes</a></li>
+				<li><a href="exposition.html">expositions</a></li>
+				<li><a href="contact.html">contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<!-- ------POP UP ARTISTE DETAIL------ -->
+	<div class="single_artiste clearfix">
+	<div class="discover_photo clearfix">
+		<span class="decouvrez_les_photos clearfix">
+			<a href="image.html"><h3>decouvrez les photos</h3></a>
+		</span>
+	</div>
+	<div class="description_side">
+		<div class="middle_bar"></div>
+		<img class="cross" src="images/icone/cross.png">
+		<div class="description">
+			<h2>pierre lagarde</h2>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus varius pretium convallis. Duis ac metus a lacus venenatis consequat. Nulla congue viverra odio, non tincidunt ex dignissim dapibus. Aliquam fringilla vulputate nibh. Integer tristique commodo odio, vitae molestie erat. Vestibulum luctus aliquet ante, at dictum magna interdum vitae. Ut a egestas elit, egestas sodales quam.
+
+			</p>
+		</div>
+	</div>
+</div>
+	<!-- ------FIN DE LA POP UP------ -->
+	<main>
+		<div class="clearfix un_artiste">
+			<img src="images/samuel.png"> 
+			<h2>samuel barraud</h2>
+			<span class="span clearfix"><h3>decouvrez l'artiste</h3></span>
+		</div>
+		<div class="clearfix un_artiste artiste_right">
+			<img src="images/pierre.png"> 
+			<h2>pierre lagarde</h2>
+			<span class="span clearfix"><h3>decouvrez l'artiste</h3></span>
+		</div>
+		<div class="clearfix un_artiste">
+			<img src="images/samuel.png"> 
+			<h2>samuel barraud</h2>
+			<span class="span clearfix"><h3>decouvrez l'artiste</h3></span>
+		</div>
+		<div class="clearfix un_artiste artiste_right">
+			<img src="images/pierre.png"> 
+			<h2>pierre lagarde</h2>
+			<span class="span clearfix"><h3>decouvrez l'artiste</h3></span>
+		</div>
+	</main>
+	<footer>
+		<div class="newsletter clearfix">
+			<h3>Abonnez-vous à notre newsletter</h3>
+			<form class="clearfix">
+				<input type="text" name="email" value="Email">
+			</form>
+			<nav class="social_icon clearfix">
+				<ul>
+					<li><img src="images/icone/facebook.png"></a></li>
+					<li><a href="#"><img src="images/icone/googleplus.png"></a></li>
+					<li><a href="#"><img src="images/icone/instagram.png"></a></li>
+					<li><a href="#"><img src="images/icone/twitter.png"></a></li>
+					<li><a href="#"><img src="images/icone/youtube.png"></a></li>
+				</ul>
+			</nav>
+			
+		</div>
+		<div class="logo_footer">
+			<h2>urbex<span class="title">gallery</span></h2>
+		</div>
+	</footer>
+	<script type="text/javascript">
+		var pop_up = document.querySelector(".single_artiste");
+
+		var page = document.querySelectorAll('.span');
+		var footer = document.querySelector('footer');
+		var main =  document.querySelector('main');
+		var cross = document.querySelector(".cross");
+
+		for (let i = 0; i < page.length; i++ ){
+				page[i].addEventListener('click',function(){
+				pop_up.style.display='inline';
+				main.style.display='none';
+				footer.style.display=('none')
+		});
+
+		};
+
+		
+
+		cross.addEventListener('click', function(){
+			
+				pop_up.style.display='none';
+				main.style.display='';
+				footer.style.display='';
+			
+				});
+	</script>
+</body>
+</html>

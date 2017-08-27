@@ -1,0 +1,313 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+
+}
+body{
+	overflow-x: hidden;
+}
+
+.clearfix:before,
+.clearfix:after{
+	content: ' ';
+	display: table;
+}
+.clearfix:after{
+	clear: both;
+}
+
+/*appel des fonts */
+@font-face {
+	font-family: "ProximaNova_regular";
+	src:url('../fonts/ProximaNova-Regular.otf');
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "ProximaNova";
+	font-weight: bold;
+	src:url('../fonts/ProximaNova-Bold.otf');
+}
+
+@font-face {
+	font-family: "ProximaNova";
+	font-weight:  Semi bold italic;
+	src:url('../fonts/ProximaNova-SemiboldItalic.otf');
+}
+@font-face{
+	font-family: "Poppins";
+	font-weight: bold;
+	src:url('../font/Poppins-Bold.ttf');
+}
+
+header{
+	height: auto;
+	font-family: "ProximaNova";
+	font-weight: bold;
+}
+
+header h1{
+	text-align: center;
+	font-size: 70px;
+	color: #000;
+	font-family: "ProximaNova";
+	font-weight: bold;
+	padding-bottom: 40px;
+	padding-top: 20px;
+	text-transform: uppercase;
+}
+.title{
+	width: 100%;
+	float: left;
+	text-transform: uppercase;
+}
+header nav{
+	height: auto;
+	width: 100%;
+	font-size: 18px;
+	letter-spacing: 6px;
+
+}
+
+ul{
+	list-style: none;
+/*	background-color: pink;
+*/}
+
+header nav ul{
+	text-align: center;
+	margin: 0 auto;
+	width: 70%;
+}
+header nav li{
+	display: inline-block;
+	width: 25%;
+	float: left;
+
+}
+
+header nav a{
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+	color: #000;
+	font-family: "ProximaNova";
+	font-weight: bold;
+}
+
+
+/*----------MAIN----------------*/
+.scene{
+		width: 85%;
+		margin: 0 auto;
+		margin-top: 160px;
+		position: relative;
+
+	}
+
+.scene ul {
+	width: 50%;
+	float: left;
+	margin-left: 3%;
+	position: relative;
+}
+
+.first_section{
+	margin-top: 10%;
+}
+
+.right_element{
+	float: right!important;
+	margin-right: -9%;
+}
+
+.scene li {
+	width: 100%;
+}
+
+.scene li:nth-child(4n+3){
+	top:75%!important;
+	left: 2.5%!important;
+	font-family: "Poppins";
+	font-weight: bold;
+	font-size: 120px;
+	color: #C5C5C5;
+}
+
+.scene li:last-child{
+	left:40%!important;
+	top:95%!important;
+	font-family: "ProximaNova";
+	font-weight:bold;
+	font-style: italic;
+	text-transform: uppercase;
+	font-size: 20px;
+	color:#cacaca;
+
+}
+.scene li:nth-child(4n+2){
+	height: 120%;
+}
+
+.image1 {
+		width: 70%;
+		height: auto;
+		padding-top: 7%;
+		margin-left: 8%;
+}
+
+.border1{
+		border: solid 6px;
+		width: 50%;
+		height: 100%;
+		color: black;
+		color: #181A24;
+}
+
+#scene2 li:nth-child(4n+2){
+	z-index: -1;
+}
+
+.side_text{
+	width: 47%;
+	float: left;
+	text-align: center;
+	padding-top: 10%;
+	font-size: 20px;
+}
+.side_text p {
+	margin:auto;
+	font-family: "ProximaNova_regular";
+}
+.side_text h3{
+	font-family: "ProximaNova_regular";
+	padding-bottom: 20px;
+	font-size: 25	px;
+}
+
+/*--------FOOTER-------------*/
+footer{
+	height: 240px;
+	background-color: #000;
+	color: #fff;
+	font-family: "ProximaNova_regular";
+	margin-top: 300px;
+}
+
+footer input {
+	width: 66%;
+	height: 50px;
+	padding-left: 20px;
+}
+.newsletter{
+	width: 35%;
+	padding-left: 10%;
+	padding-top: 30px;
+	float: left;
+}
+footer nav{
+	width: 78%;
+	padding-top: 30px;
+}
+
+.newsletter h3{
+	padding-bottom: 30px;
+}
+
+footer li{
+	float: left;
+	width: 20%;
+}
+footer img{
+	width: 40%;
+}
+.logo_footer{
+	float: right;
+	padding-top: 50px;
+	font-family: "ProximaNova";
+	font-weight: bold;
+	width: 30%;
+
+}
+.logo_footer h2{
+	font-size: 60px;
+	text-align: center;
+
+}
+.logo_footer span{
+	font-size: 55px;
+
+}
+
+/*-----------------RESPONSIVE--------------------*/
+@media only screen and (max-width : 728px) {
+	header nav li {
+		width: 100%;
+		display: block;
+		padding-top: 15px;
+	}
+	main{
+		padding-top: 0px;
+	}
+	.scene ul {
+		width: 100%;
+	}
+	.side_text{
+		width: 100%;
+		padding-top: 30%;
+	}
+}
+
+@media only screen and (max-width : 850px) {
+	.logo_footer{
+		padding-right: 30px;
+	}
+}
+@media only screen and (max-width : 620px) {
+.newsletter{
+		width: 100%;
+		padding-left: 0;
+	}
+	.newsletter h3{
+		text-align: center;
+	}
+
+	.newsletter form{
+		margin: 0 auto;
+		display: block;
+		width: 72%;
+	}
+	footer{
+		height: 385px;
+	}
+	footer input{
+		width: 90%;
+	}
+	footer nav{
+		margin: 0 auto;
+	}
+
+	.logo_footer{
+		float: left;
+		text-align: center;
+		width: 100%;
+
+	}
+}

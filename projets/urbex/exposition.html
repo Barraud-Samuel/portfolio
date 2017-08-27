@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>expositions</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="styles/exposition.css">
+	<meta charset="UTF-8">
+</head>
+<body>
+	<header class="page_list_artistes clearfix">
+		
+		<h1>expositions</h1>
+		<nav>
+			<ul>
+				<li><a href="index.html">accueil</a></li>
+				<li><a href="artistes.html">artistes</a></li>
+				<li><a href="#">expositions</a></li>
+				<li><a href="contact.html">contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section id="scene" class="scene clearfix first_section">
+		<ul class="clearfix">
+			<li class="layer" data-depth="0"><img class="image1" src="images/urbex-paris-petite-ceinture-05.jpg"></li>
+			<li class="layer" data-depth="0"><div class="border1"></div></li>
+			<li class="layer" data-depth="0"><h2>01</h2></li>
+			<li class="layer" data-depth="0"><h2>exposition permanente</h2></li>
+		</ul>
+		<div class="side_text clearfix">
+			<h3>Durée permanente</h3>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus varius pretium convallis. Duis ac metus a lacus venenatis consequat. Nulla congue viverra odio, non tincidunt ex dignissim dapibus. Aliquam fringilla vulputate nibh. Integer tristique commodo odio, vitae molestie erat. Vestibulum luctus aliquet ante, at dictum magna interdum vitae. Ut a egestas elit, egestas sodales quam.
+			</p>
+			<p></p>
+		</div>
+	</section>
+	<section id="scene2" class="scene clearfix">
+		<ul class="clearfix right_element">
+			<li class="layer" data-depth="0"><img class="image1" src="images/echo-grid-179299.jpg"></li>
+			<li class="layer" data-depth="0"><div class="border1"></div></li>
+			<li class="layer" data-depth="0"><h2>02</h2></li>
+			<li class="layer" data-depth="0"><h2>exposition temporaire</h2></li>
+		</ul>
+		<div class="side_text left_side">
+			<h3>Durée : du 19 mars au 24 avril</h3>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus varius pretium convallis. Duis ac metus a lacus venenatis consequat. Nulla congue viverra odio, non tincidunt ex dignissim dapibus. Aliquam fringilla vulputate nibh. Integer tristique commodo odio, vitae molestie erat. Vestibulum luctus aliquet ante, at dictum magna interdum vitae. Ut a egestas elit, egestas sodales quam.
+			</p>
+	</section>
+	<section id="scene3" class="scene clearfix">
+		<ul class="clearfix">
+			<li class="layer" data-depth="0"><img class="image1" src="images/martin-wessely-473.jpg"></li>
+			<li class="layer" data-depth="0"><div class="border1"></div></li>
+			<li class="layer" data-depth="0"><h2>03</h2></li>
+			<li class="layer" data-depth="0"><h2>exposition future</h2></li>
+		</ul>
+		<div class="side_text">
+			<h3>Durée : du 1 mai au 4 juillet</h3>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus varius pretium convallis. Duis ac metus a lacus venenatis consequat. Nulla congue viverra odio, non tincidunt ex dignissim dapibus. Aliquam fringilla vulputate nibh. Integer tristique commodo odio, vitae molestie erat. Vestibulum luctus aliquet ante, at dictum magna interdum vitae. Ut a egestas elit, egestas sodales quam.
+			</p>
+		</div>
+	</section>
+	</main>
+	<footer>
+		<div class="newsletter clearfix">
+			<h3>Abonnez-vous à notre newsletter</h3>
+			<form class="clearfix">
+				<input type="text" name="email" value="Email">
+			</form>
+			<nav class="social_icon clearfix">
+				<ul>
+					<li><img src="images/icone/facebook.png"></a></li>
+					<li><a href="#"><img src="images/icone/googleplus.png"></a></li>
+					<li><a href="#"><img src="images/icone/instagram.png"></a></li>
+					<li><a href="#"><img src="images/icone/twitter.png"></a></li>
+					<li><a href="#"><img src="images/icone/youtube.png"></a></li>
+				</ul>
+			</nav>
+			
+		</div>
+		<div class="logo_footer">
+			<h2>urbex<span class="title">gallery</span></h2>
+		</div>
+	</footer>
+	<script type="text/javascript" src="deploy/parallax.js"></script>
+	<script type="text/javascript">
+	var scene = document.getElementById('scene');
+	var parallax = new Parallax(scene);
+	var scene2 = document.getElementById('scene2');
+	var parallax2= new Parallax(scene2);
+	var scene3 = document.getElementById('scene3');
+	var parallax3 = new Parallax(scene3);
+	</script>
+	</body>
+	</html>

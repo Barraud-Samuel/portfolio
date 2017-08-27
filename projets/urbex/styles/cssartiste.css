@@ -1,0 +1,179 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+
+
+
+}
+.clearfix:before,
+.clearfix:after{
+	content: ' ';
+	display: table;
+}
+.clearfix:after{
+	clear: both;
+}
+
+/*appel des fonts */
+@font-face {
+	font-family: "ProximaNova_regular";
+	src:url('../fonts/ProximaNova-Regular.otf');
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "ProximaNova";
+	font-weight: bold;
+	src:url('../fonts/ProximaNova-Bold.otf');
+}
+
+@font-face {
+	font-family: "ProximaNova";
+	font-weight:  Semi bold italic;
+	src:url('../fonts/ProximaNova-SemiboldItalic.otf');
+}
+@font-face{
+	font-family: "Poppins";
+	font-weight: bold;
+	src:url('../font/Poppins-Bold.ttf');
+}
+
+.single_artiste{
+	width: 100%;
+	display: none;
+	position: absolute;
+	top: 0;
+	background-color: #fff;
+	z-index: 3;
+}
+
+.discover_photo{
+	height: 100vh;
+	float: left;
+	width: 50%;
+	background: url("../images/evan-kirby-77583.jpg");
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.decouvrez_les_photos{
+	width: 50%;
+	height:80px;
+	border: solid 4px white;
+	display: block;
+	margin: 0 auto;
+	margin-top: 50vh;
+	transform: translateY(-50%);
+	text-align: center;
+	background-color: rgba(0,0,0,0.8);
+	color: #fff;
+	line-height: 80px;
+	font-size: 20px;
+	font-family:"ProximaNova_regular";
+	text-transform: uppercase;
+}
+
+.decouvrez_les_photos a{
+	text-decoration: none;
+	color: #fff;
+}
+
+.description_side{
+	float: left;
+	width: 50%;
+	height: 100vh;
+	padding: 4%;
+	box-sizing: border-box;
+	text-align: center;
+	display: flex;
+	position: relative;
+}
+
+.cross{
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+}
+
+.description{
+	height: auto;
+	margin:auto;
+
+}
+
+.description_side h2{
+	font-size: 30px;
+	font-family: "ProximaNova";
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.description_side p{
+	font-size: 20px;
+	line-height: 30px;
+	padding-top: 150px;
+}
+
+.middle_bar{
+	position: absolute;
+	width: 0.40%;
+	background-color:#ECECEC;
+	left: 50%;
+	right: 50%;
+	height: 90%;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	z-index: -1;
+
+}
+
+/*------RESPONSIVE------*/
+
+@media only screen and (max-width : 1024px) {
+
+
+
+	 .decouvrez_les_photos{
+	 	font-size: 14px;
+	 
+}
+
+@media only screen and (max-width : 768px) {
+	.description_side p {
+		padding-top: 100px;
+		font-size: 16px;
+	}
+
+	.description_side h2 {
+		font-size: 20px;
+	}
+	.decouvrez_les_photos{
+		font-size: 12px;
+	}
+}
+
+@media only screen and (max-width : 620px) {
+	.discover_photo{
+		width: 100%;
+	}
+	.description_side{
+		width: 100%;
+	}
+}
