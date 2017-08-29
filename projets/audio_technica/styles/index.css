@@ -1,0 +1,476 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Arial", "Helvetica", sans-serif;
+}
+
+html
+{
+    font-size: 62.5%;
+}
+
+.container
+{
+    width: 100%;
+}
+
+nav
+{
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    padding: 20px 4% 20px 4%;
+    overflow: hidden;
+    transition: all 0.5s;
+    z-index: 7;
+}
+
+.scrolled
+{
+    background-color: rgba(0,0,0,0.9) !important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.nav-left
+{
+    float: left;
+    display: flex;
+    align-items: center;
+    width: 90%;
+}
+
+.nav-left img[alt=logo]
+{
+    width: 4%;
+    float: left;
+    transition: all 0.5s;
+}
+
+.minified
+{
+    width: 3% !important;
+}
+
+nav ul
+{
+    float: left;
+}
+
+nav ul li
+{
+    display: inline-block;
+    list-style: none;
+    margin: 0 50px;
+}
+
+nav ul a
+{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.9rem;
+    text-decoration: none;
+}
+
+.nav-right
+{
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.nav-right img
+{
+    width: 24%;
+    margin-left: 5%;
+}
+
+.nav-right img[alt=menu]
+{
+    display: none;
+    width: 30%;
+}
+
+.hidden
+{
+    display: none;
+}
+
+.drop-container
+{
+    width: 85%;
+    background-color: #fff;
+    padding: 15px;
+    overflow: auto;
+    margin-bottom: 40px;
+}
+
+.drop-container div
+{
+    display: flex;
+    align-items: flex-end;
+    padding: 10px;
+    height: 200px;
+    float: left;
+    background-size: cover;
+}
+
+.drop-container p
+{
+    font-size: 3rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.scroll-over-ear
+{
+    width: 35%;
+    margin-right: 15px;
+    background: #000 url("../img-content/over-ear.png") no-repeat center center;
+}
+
+.scroll-gaming
+{
+    width: 25%;
+    margin-right: 15px;
+    background: #000 url("../img-content/gaming.png") no-repeat center center;
+}
+
+.scroll-sport
+{
+    width: calc(40% - 30px);
+    margin-bottom: 15px;
+    background: #000 url("../img-content/sport.png") no-repeat center center;
+}
+
+.scroll-studio
+{
+    width: 40%;
+    margin-right: 15px;
+    background: #000 url("../img-content/studio.png") no-repeat center center;
+}
+
+.scroll-on-ear
+{
+    width: 20%;
+    margin-right: 15px;
+    background: #000 url("../img-content/on-ear.png") no-repeat center center;
+}
+
+.scroll-hi-fi
+{
+    width: calc(40% - 30px);
+    background: #000 url("../img-content/hi-fi.png") no-repeat center center;
+}
+
+header
+{
+    width: 100%;
+    overflow: hidden;
+}
+
+video
+{
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+section.home-content
+{
+    width: 100%;
+    padding: 20px 1.5%;
+    overflow: auto;
+}
+
+article
+{
+    float: left;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+article:hover .article-bg
+{
+    filter: brightness(30%);
+    transition: all 0.2s;
+}
+
+article:hover p
+{
+    display: block;
+}
+
+article img
+{
+    width: 100%;
+}
+
+.article-bg
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+article p
+{
+    color: #fff;
+    font-size: 3rem;
+    font-weight: bold;
+    display: none;
+    z-index: 6;
+    transition: all 0.2s;
+}
+
+.pan-lg-left, .pan-md-middle
+{
+    width: 40%;
+    margin-right: 20px;
+}
+
+.pan-lg-left
+{
+    height: 700px;
+}
+
+.pan-lg-left .article-bg
+{
+    background: #000 url("../img-content/ecouteurs.jpg") no-repeat center top;
+    background-size: cover;
+}
+
+.pan-md-middle
+{
+    height: 340px;
+}
+
+.pan-md-middle .article-bg
+{
+    background: #000 url("../img-content/platine.jpg") no-repeat center top;
+    background-size: cover;
+}
+
+.pan-sm-right
+{
+    width: calc(20% - 40px);
+    height: 340px;
+}
+
+.pan-sm-right .article-bg
+{
+    background: #000 url("../img-content/micro.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+.pan-sm-left
+{
+    width: calc(20% - 40px);
+    height: 340px;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.pan-sm-left .article-bg
+{
+    background: #beb192 url("../img-content/casque-dore.png") no-repeat center center;
+    background-size: cover;
+}
+
+.pan-md-right
+{
+    width: 40%;
+    height: 340px;
+    margin-top: 20px;
+}
+
+.pan-md-right .article-bg
+{
+    background: #beb192 url("../img-content/casques.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+footer
+{
+    background: #000;
+    color: #fff;
+    padding: 40px 3%;
+    width: 100%;
+    overflow: auto;
+}
+
+footer h3
+{
+    color: #beb192;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+h3.both
+{
+    margin: 20px 0;
+}
+
+footer p
+{
+    font-size: 1.3rem;
+}
+
+footer hr
+{
+    margin: 40px 0;
+    width: 50%;
+    border-color: #beb192;
+}
+
+.footer-left
+{
+    float: left;
+    width: 30%;
+    margin-right: 10%;
+}
+
+.footer-left img
+{
+    margin-top: 15px;
+    margin-right: 24px;
+    width: 8%;
+}
+
+footer img[alt=logo]
+{
+    width: 4%;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.footer-middle
+{
+    float: left;
+    width: 20%;
+    margin-right: 10%;
+}
+
+.footer-right
+{
+    float: left;
+    width: 30%;
+}
+
+.footer-right img
+{
+    width: 25%;
+    margin-right: 10%;
+    margin-bottom: 25px;
+}
+
+.footer-color
+{
+    width: 100%;
+    height: 30px;
+    margin-top: 40px;
+    background-color: #beb192;
+}
+
+.footer-mobile
+{
+    display: none;
+    text-align: center;
+}
+
+@media screen and (max-width: 1024px)
+{
+    .nav-left ul
+    {
+        display: none;
+    }
+    
+    .nav-right img
+    {
+        display: none;
+    }
+    
+    .nav-right img[alt=menu]
+    {
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 875px)
+{
+    .pan-lg-left
+    {
+        width: 49%;
+        margin-right: 2%;
+        height: 400px;
+    }
+    
+    .pan-md-middle
+    {
+        width: 49%;
+        height: 230px;
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+    
+    .pan-sm-right
+    {
+        width: 49%;
+        height: 160px;
+    }
+    
+    .pan-sm-right .article-bg
+    {
+        background-position: center top;
+    }
+    
+    .pan-sm-left
+    {
+        width: 49%;
+        margin-right: 2%;
+        height: 160px;
+        margin-top: 10px;
+    }
+    
+    .pan-md-right
+    {
+        width: 49%;
+        height: 160px;
+        margin-top: 10px;
+    }
+    
+    .footer-right, .footer-middle, .footer-left
+    {
+        display: none;
+    }
+    
+    .footer-mobile
+    {
+        display: block;
+    }
+    
+    footer img
+    {
+        margin: 0 auto;
+        width: 5% !important;
+        margin-bottom: 40px !important;
+    }
+    
+    footer h3
+    {
+        margin-bottom: 5px;
+    }
+}

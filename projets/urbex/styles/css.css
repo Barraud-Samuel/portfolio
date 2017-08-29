@@ -1,0 +1,420 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+
+}
+
+body{
+	overflow-x: hidden;
+}
+
+.clearfix:before,
+.clearfix:after{
+	content: ' ';
+	display: table;
+}
+.clearfix:after{
+	clear: both;
+}
+
+/*appel des fonts */
+@font-face {
+	font-family: "ProximaNova_regular";
+	src:url('../fonts/ProximaNova-Regular.otf');
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "ProximaNova";
+	font-weight: bold;
+	src:url('../fonts/ProximaNova-Bold.otf');
+}
+
+@font-face {
+	font-family: "ProximaNova";
+	font-weight:  Semi bold italic;
+	src:url('../fonts/ProximaNova-SemiboldItalic.otf');
+}
+@font-face{
+	font-family: "Poppins";
+	font-weight: bold;
+	src:url('../font/Poppins-Bold.ttf');
+}
+
+
+/* --------HEADER --------*/
+
+header{
+	position: relative;
+	height: 100vh;
+	font-family: "ProximaNova";
+	font-weight: bold;
+	overflow: hidden;
+}
+
+video{
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	object-fit: cover;
+	z-index: -1;
+}
+
+h1{
+	text-align: center;
+	font-size: 100px;
+	color: #fff;
+	font-family: "ProximaNova";
+	font-weight: bold;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	margin-top: 50vh;
+    transform: translateY(-80%);
+
+}
+.title{
+	width: 100%;
+	float: left;
+	text-transform: uppercase;
+}
+header nav{
+	height: auto;
+	bottom: 20px;
+	position: absolute;
+	width: 100%;
+	font-size: 18px;
+	letter-spacing: 6px;
+}
+
+ul{
+	list-style: none;
+/*	background-color: pink;
+*/}
+
+header nav ul{
+	text-align: center;
+	margin: 0 auto;
+	width: 70%;
+}
+header nav li{
+	display: inline-block;
+	width: 25%;
+	float: left;
+
+}
+
+
+
+header nav a{
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+	color: #fff;
+}
+
+main {
+	width: 90%;
+	margin: 0 auto;
+	height: auto;
+	overflow: hidden;
+	padding-bottom: 230px;
+	position: relative;
+	max-width: 1440px;
+}
+
+/*bar du milieu*/
+
+.middle_bar{
+	position: absolute;
+	width: 0.40%;
+	background-color:#ECECEC;
+	left: 50%;
+	right: 50%;
+	height: 90%;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+
+
+}
+
+/*------parallax-------*/
+
+a{
+	text-decoration: none;
+	color: #000;
+}
+.scene{
+		width: 85%;
+		margin: 0 auto;
+		margin-top: 160px;
+/*		background-color: red;
+*/	
+	}
+
+.scene ul {
+	width: 50%;
+	float: left;
+	margin-left: 3%;
+	position: relative;
+}
+
+.first_section{
+	margin-top: 5%;
+}
+
+.right_element{
+	float: right!important;
+	margin-right: -9%;
+}
+
+.scene li {
+	width: 100%;
+}
+
+.scene li:nth-child(4n+3){
+	top:75%!important;
+	left: 2.5%!important;
+	font-family: "Poppins";
+	font-weight: bold;
+	font-size: 120px;
+	color: #C5C5C5;
+}
+
+.scene li:last-child{
+	left:40%!important;
+	top:95%!important;
+	font-family: "ProximaNova";
+	font-weight:bold;
+	font-style: italic;
+	text-transform: uppercase;
+	font-size: 20px
+
+}
+.scene li:nth-child(4n+2){
+	height: 120%;
+}
+
+.image1 {
+		width: 70%;
+		height: auto;
+		padding-top: 7%;
+		margin-left: 8%;
+}
+
+.border1{
+		border: solid 6px;
+		width: 50%;
+		height: 100%;
+		color: black;
+		color: #181A24;
+}
+
+#scene2 li:nth-child(4n+2){
+	z-index: -1;
+}
+/*text description home page*/
+
+.side_text{
+	float: left;
+	padding-left: 4.5%;
+	margin-top: 7%;
+	letter-spacing: 10px;
+	font-family: "ProximaNova_regular";
+}
+.center_span{
+	text-align: right;
+}
+.side_text span{
+	width: 100%;
+	display: block;
+	padding-top: 40px;
+}
+
+
+
+.left_side{
+	float: right;
+	padding-right: 14%;
+}
+
+
+/*----------FOOTER----------*/
+
+footer{
+	height: 240px;
+	background-color: #000;
+	color: #fff;
+	font-family: "ProximaNova_regular";
+}
+
+footer input {
+	width: 66%;
+	height: 50px;
+	padding-left: 20px;
+}
+.newsletter{
+	width: 35%;
+	padding-left: 10%;
+	padding-top: 30px;
+	float: left;
+}
+footer nav{
+	width: 78%;
+	padding-top: 30px;
+}
+
+.newsletter h3{
+	padding-bottom: 30px;
+}
+
+footer li{
+	float: left;
+	width: 20%;
+}
+footer img{
+	width: 40%;
+}
+.logo_footer{
+	float: right;
+	padding-top: 50px;
+	font-family: "ProximaNova";
+	font-weight: bold;
+	width: 30%;
+
+}
+.logo_footer h2{
+	font-size: 60px;
+	text-align: center;
+
+}
+.logo_footer span{
+	font-size: 55px;
+
+}
+
+/*------RESPONSIVE-------*/
+
+@media only screen and (max-width : 1024px) {
+
+	header nav {
+		font-size: 13px;
+	}
+	h1{
+		font-size: 85px;
+	}
+	.scene li:nth-child(4n+3){
+		font-size: 80px;
+	}
+}
+
+@media only screen and (max-width : 728px) {
+	header nav li {
+		width: 100%;
+		display: block;
+		padding-top: 15px;
+	}
+}
+@media only screen and (max-width : 850px) {
+	.logo_footer{
+		padding-right: 30px;
+	}
+}
+@media only screen and (max-width : 620px) {
+	.scene ul{
+		width: 100%;
+	}
+	.side_text{
+		width: 100%;
+		text-align: center;
+		padding: 0;
+		padding-top: 25px;
+	}
+	.newsletter{
+		width: 100%;
+		padding-left: 0;
+	}
+	.newsletter h3{
+		text-align: center;
+	}
+
+	.newsletter form{
+		margin: 0 auto;
+		display: block;
+		width: 72%;
+	}
+	footer{
+		height: 385px;
+	}
+	footer input{
+		width: 90%;
+	}
+	footer nav{
+		margin: 0 auto;
+	}
+
+	.logo_footer{
+		float: left;
+		text-align: center;
+		width: 100%;
+
+	}
+}
+
+
+
+/*scroll bar*/
+
+/*::-webkit-scrollbar{
+	width: 10px;
+	background-color: transparent;
+}
+
+
+::-webkit-scrollbar-track
+
+{
+background-color: rgba(0,0,0,0.5);
+visibility: hidden;
+display: none;
+}
+
+::-webkit-scrollbar-thumb
+
+{
+
+border-radius: 10px;
+
+-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,1);
+
+background-color:  rgba(255,255,225,1);
+
+}*/
+
+/*test scroll*/
+
+.container{
+	position: relative;
+	padding: 0;
+	height: auto;
+}

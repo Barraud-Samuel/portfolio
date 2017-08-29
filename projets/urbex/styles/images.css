@@ -1,0 +1,113 @@
+*{
+	margin: 0 auto;
+}
+
+.clearfix:before,
+.clearfix:after{
+	content: ' ';
+	display: table;
+}
+.clearfix:after{
+	clear: both;
+}
+
+section div{
+	height: 90vh;
+}
+
+.first_section .left_img{
+	background: url('../images/samuel_un.jpg');
+	width: 50%;
+	height:90vh;
+	float: left;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.first_section .right_top_img{
+	background: url('../images/tour_eiffel.jpg');
+	width:50%;
+	height:45vh;
+	float: left;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	
+}
+.first_section .right_bot_img{
+	background: url('../images/arche_un.jpg');
+	width: 50%;
+	height: 45vh;
+	float: left;
+    background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+
+.second_section .left_img{
+	background: url('../images/arche_trois.jpg');
+	width: 50%;
+	height:90vh;
+	float: left;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.second_section .right_top_img{
+	background: url('../images/arche_deux.jpg');
+	width:50%;
+	height:45vh;
+	float: left;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	
+}
+
+.second_section .right_bot_img{
+	background: url('../images/graph_deux.jpg');
+	width: 50%;
+	height: 45vh;
+	float: left;
+    background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.cross{
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	margin-top: 30px;
+	margin-left:30px;
+	cursor: pointer;
+}
+
+
+/*-------RESPONSIVE------*/
+@media only screen and (max-width : 1024px) {
+	
+	.first_section .left_img{
+		width: 100%;
+	}
+	.second_section .left_img{
+		width: 100%;
+	}
+
+}
+@media only screen and (max-width : 800px) {
+	.first_section .right_bot_img{
+		width: 100%;
+	}
+	.first_section .right_top_img{
+		width: 100%;
+	}
+	.second_section .right_bot_img{
+		width: 100%;
+	}
+	.second_section .right_top_img{
+		width: 100%;
+	}
+}

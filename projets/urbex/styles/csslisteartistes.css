@@ -1,0 +1,324 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+
+}
+
+body{
+	background-image: url(../images/andrew-amistad-60771.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	overflow-x: hidden;
+}
+.clearfix:before,
+.clearfix:after{
+	content: ' ';
+	display: table;
+}
+.clearfix:after{
+	clear: both;
+}
+
+/*appel des fonts */
+@font-face {
+	font-family: "ProximaNova_regular";
+	src:url('../fonts/ProximaNova-Regular.otf');
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "ProximaNova";
+	font-weight: bold;
+	src:url('../fonts/ProximaNova-Bold.otf');
+}
+
+@font-face {
+	font-family: "ProximaNova";
+	font-weight:  Semi bold italic;
+	src:url('../fonts/ProximaNova-SemiboldItalic.otf');
+}
+@font-face{
+	font-family: "Poppins";
+	font-weight: bold;
+	src:url('../font/Poppins-Bold.ttf');
+}
+
+header{
+	height: auto;
+	font-family: "ProximaNova";
+	font-weight: bold;
+}
+
+header h1{
+	text-align: center;
+	font-size: 70px;
+	color: #fff;
+	font-family: "ProximaNova";
+	font-weight: bold;
+	padding-bottom: 40px;
+	padding-top: 20px;
+}
+.title{
+	width: 100%;
+	float: left;
+	text-transform: uppercase;
+}
+header nav{
+	height: auto;
+	width: 100%;
+	font-size: 18px;
+	letter-spacing: 6px;
+
+}
+
+ul{
+	list-style: none;
+/*	background-color: pink;
+*/}
+
+header nav ul{
+	text-align: center;
+	margin: 0 auto;
+	width: 70%;
+}
+header nav li{
+	display: inline-block;
+	width: 25%;
+	float: left;
+
+}
+
+header nav a{
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+	color: #fff;
+	font-family: "ProximaNova";
+	font-weight: bold;
+}
+
+/*------- MAIN------*/
+
+main{
+	width: 70%;
+	margin: 0 auto;
+	padding-top: 90px;
+	padding-bottom: 260px;
+}
+
+.un_artiste{
+	width: 55%;
+	margin-top: 70px;
+	position: relative;
+	background-color: rgba(0,0,0,0.5);
+}
+
+.artiste_right{
+	margin-left: 45%;
+}
+
+.un_artiste img{
+	width: 30%;
+	height: auto;
+	float: left;
+	box-sizing: border-box;
+	padding: 10px;
+}
+.un_artiste h2{
+	text-align: center;
+	padding-top: 10px;
+	font-size: 20px;
+	text-transform: uppercase;
+	font-family: "ProximaNova";
+	font-weight: bold;
+	color: #fff;
+}
+
+.un_artiste span{
+	text-align: center;
+	width: 40%;
+	background-color: rgba(0,0,0,0.8);
+	float: left;
+	margin: 0 auto;
+	position: absolute;
+  	top: 50%;
+  	transform: translateY(-50%);
+  	margin-left: 14.5%;
+  	height: 70px;
+  	border: solid #fff;
+  	line-height: 70px;
+  	cursor: pointer;
+
+	}
+.un_artiste span h3 {
+	font-family: "ProximaNova_regular";
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 11px;
+}
+
+/*-------FOOTER-------*/
+
+footer{
+	height: 240px;
+	background-color: #000;
+	color: #fff;
+	font-family: "ProximaNova_regular";
+}
+
+footer input {
+	width: 66%;
+	height: 50px;
+	padding-left: 20px;
+}
+.newsletter{
+	width: 35%;
+	padding-left: 10%;
+	padding-top: 30px;
+	float: left;
+}
+footer nav{
+	width: 78%;
+	padding-top: 30px;
+}
+
+.newsletter h3{
+	padding-bottom: 30px;
+}
+
+footer li{
+	float: left;
+	width: 20%;
+}
+footer img{
+	width: 40%;
+}
+.logo_footer{
+	float: right;
+	padding-top: 50px;
+	font-family: "ProximaNova";
+	font-weight: bold;
+	width: 30%;
+
+}
+.logo_footer h2{
+	font-size: 60px;
+	text-align: center;
+
+}
+.logo_footer span{
+	font-size: 55px;
+
+}
+
+/*-------RESPONSIVE------*/
+
+
+
+@media only screen and (max-width : 1190px) {
+	.un_artiste span{
+		height: 40px;
+		line-height: 40px;
+	}
+}
+
+@media only screen and (max-width : 1024px) {
+
+	header nav {
+		font-size: 13px;
+	}
+	header h1{
+		font-size: 60px;
+	}
+
+	.un_artiste h2 {
+		font-size: 15px;
+	}
+	.un_artiste span h3{
+		font-size: 10px;
+	}
+}
+
+@media only screen and (max-width : 728px) {
+	header nav li {
+		width: 100%;
+		display: block;
+		padding-top: 15px;
+	}
+	main{
+		padding-top: 0px;
+	}
+}
+
+@media only screen and (max-width : 850px) {
+	.logo_footer{
+		padding-right: 30px;
+	}
+	.artiste_right{
+	margin-left: 0;
+	margin: 0 auto;
+}
+	.un_artiste{
+		margin: 0 auto;
+		padding-bottom:; 
+		margin-top: 70px;
+		width: 100%;
+	}
+}
+@media only screen and (max-width : 620px) {
+.newsletter{
+		width: 100%;
+		padding-left: 0;
+	}
+	.newsletter h3{
+		text-align: center;
+	}
+
+	.newsletter form{
+		margin: 0 auto;
+		display: block;
+		width: 72%;
+	}
+	footer{
+		height: 385px;
+	}
+	footer input{
+		width: 90%;
+	}
+	footer nav{
+		margin: 0 auto;
+	}
+
+	.logo_footer{
+		float: left;
+		text-align: center;
+		width: 100%;
+
+	}
+}
+
+@media only screen and (max-width : 620px) {
+	.un_artiste span{
+		height: 30px;
+		line-height: 30px;
+	}
+}

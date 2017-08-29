@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="styles/css.css">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-99999228-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+	<title>Homepage</title>
+</head>
+<body>
+	<header class="clearfix">
+		<video autoplay="true" loop="true">
+			<source src="images/videohomepage.mp4" type="video/mp4">
+		</video>
+		<h1>urbex<span class="title">gallery</span></h1>
+		<nav>
+			<ul>
+				<li><a href="#">accueil</a></li>
+				<li><a href="artistes.html">artistes</a></li>
+				<li><a href="exposition.html">expositions</a></li>
+				<li><a href="contact.html">contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main class="clearfix">
+	<div class="middle_bar"></div>
+			
+	<section id="scene" class="scene clearfix first_section">
+		<ul class="clearfix">
+			<li class="layer" data-depth="0.3"><img class="image1" src="images/urbex-paris-petite-ceinture-05.jpg"></li>
+			<li class="layer" data-depth="0.7"><div class="border1"></div></li>
+			<li class="layer" data-depth="1"><h2>01</h2></li>
+			<li class="layer" data-depth="1.3"><h2>exposition permanente</h2></li>
+		</ul>
+		<div class="side_text">
+			<a href="exposition.html"><p>
+				<span>Découvrez l'exposition</span>
+				<span>Permanante</span>
+				<span></span>
+			</p></a>
+		</div>
+	</section>
+	<section id="scene2" class="scene clearfix">
+		<ul class="clearfix right_element">
+			<li class="layer" data-depth="-0.3"><img class="image1" src="images/echo-grid-179299.jpg"></li>
+			<li class="layer" data-depth="-0.7"><div class="border1"></div></li>
+			<li class="layer" data-depth="-1"><h2>02</h2></li>
+			<li class="layer" data-depth="-1.3"><h2>exposition temporaire</h2></li>
+		</ul>
+		<div class="side_text left_side">
+			<a href="exposition.html"><p>
+				<span>Découvrez l'exposition</span>
+				<span class="center_span">Temporaire</span>
+				<span>Du 19 mars au 24 avril</span>
+			</p></a>
+	</section>
+	<section id="scene3" class="scene clearfix ">
+		<ul class="clearfix">
+			<li class="layer" data-depth="0.3"><img class="image1" src="images/martin-wessely-473.jpg"></li>
+			<li class="layer" data-depth="0.7"><div class="border1"></div></li>
+			<li class="layer" data-depth="1"><h2>03</h2></li>
+			<li class="layer" data-depth="1.3"><h2>exposition future</h2></li>
+		</ul>
+		<div class="side_text">
+			<a href="exposition.html"><p>
+				<span>Découvrez la prochaine</span>
+				<span>Exposition</span>
+				<span>Du 1 mai au 4 juillet</span>
+			</p></a>
+		</div>
+	</section>
+	</main>
+	<footer>
+		<div class="newsletter clearfix">
+			<h3>Abonnez-vous à notre newsletter</h3>
+			<form class="clearfix">
+				<input type="text" name="email" value="Email">
+			</form>
+			<nav class="social_icon clearfix">
+				<ul>
+					<li><a href="#"><img src="images/icone/facebook.png"></a></li>
+					<li><a href="#"><img src="images/icone/googleplus.png"></a></li>
+					<li><a href="#"><img src="images/icone/instagram.png"></a></li>
+					<li><a href="#"><img src="images/icone/twitter.png"></a></li>
+					<li><a href="#"><img src="images/icone/youtube.png"></a></li>
+				</ul>
+			</nav>
+			
+		</div>
+		<div class="logo_footer">
+			<h2>urbex<span class="title">gallery</span></h2>
+		</div>
+	</footer>
+</body>
+<script type="text/javascript" src="deploy/parallax.js"></script>
+<script type="text/javascript">
+	var scene = document.getElementById('scene');
+	var parallax = new Parallax(scene);
+	var scene2 = document.getElementById('scene2');
+	var parallax2= new Parallax(scene2);
+	var scene3 = document.getElementById('scene3');
+	var parallax3 = new Parallax(scene3);
+	</script>
+
+</body>
+</html>
