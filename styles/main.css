@@ -119,7 +119,6 @@ header .scene{
   z-index: 2;
   margin: -80px 0 0 -80px;
   height: 130%;
-  /*background: url(../img-layout/spaceship.png);*/
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;: 
@@ -170,6 +169,7 @@ header .scene{
   padding-top: 60px;
   font-size: 22px;
   font-family: 'Playfair Display', serif;
+  padding: 0 0 20px 0;  
 }
 .illustration{
   width: 130px;
@@ -283,11 +283,12 @@ header .scene{
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
   min-width: 100px;
+    -webkit-transition:1s;
+          transition: 1s;
 }
 .skillsLogo img:hover{
   -webkit-filter: grayscale(0%);
-  filter: grayscale(0%);
-  transition: 0.5s;
+          filter: grayscale(0%);
 }
 .contact{
   width: 100%;
