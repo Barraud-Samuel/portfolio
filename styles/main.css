@@ -281,8 +281,6 @@ header .scene{
 .skillsLogo img{
   width: 100%;
   display: block;
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
   min-width: 100px;
     -webkit-transition:1s;
           transition: 1s;
